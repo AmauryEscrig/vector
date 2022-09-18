@@ -2,32 +2,29 @@
 #include <vector> 
 
 
-void deduplicate(vector <int> vec)
+void deduplicate(std::vector <int> vec)
 {
-  vector <int> Output;
+  std::vector <int> Output;
   int length = 0;
   int count = 0; 
   
-  for (int elements: TempInput)
+  for (int elements: vec)
   {
     length++;
   }
 
   for (int i = length - 1; i --> 0;)
   {
-    if ( TempInput.at(i) != Output.at(count) )
+    if ( vec.at(i) != Output.at(count) )
     {
-      Output.push_back(TempInput.at(i));
+      Output.push_back(vec.at(i));
     }   
   }
-
-  std::cout << Output;  
-
 }
 
 int main()
 {
-  vector <int> TempInput;
+  std::vector <int> TempInput;
   
   std::cout << "Enter the vector elements: ";
   std::cin >> TempInput;
